@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour
 {
     [SerializeField]
-    string leveltoload = "Win";
+    string leveltoload = "2ndPart";
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class Win : MonoBehaviour
     {
         Debug.Log(collision.gameObject.name);
         //IF player touches Dorito, load scene win
-        if(collision.gameObject.tag == "Dorito" )
+        if(collision.gameObject.tag == "Chip" )
         {
            
             

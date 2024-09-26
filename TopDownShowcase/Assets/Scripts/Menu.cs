@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         //IF button named Play is clicked load scene named 1stPart
-        if(Button)
+        
 
     }
 
