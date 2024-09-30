@@ -502,6 +502,7 @@ GameObject:
   - component: {fileID: 573205358}
   - component: {fileID: 573205360}
   - component: {fileID: 573205359}
+  - component: {fileID: 573205361}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Chip
@@ -611,6 +612,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &573205361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573205357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1817bf072e41e064fa772b99818597d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leveltoload: Win
 --- !u!1 &681353599
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +943,10 @@ PrefabInstance:
     - target: {fileID: 7158462646801235040, guid: fb25691f9bb8d5d4bb197be088aa0f82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688366297690482235, guid: fb25691f9bb8d5d4bb197be088aa0f82, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3735,10 +3753,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 460296084}
-    - target: {fileID: 1906362426711508686, guid: 9231a16ba82e1bf4bb067ddb5ad5183b, type: 3}
-      propertyPath: leveltoload
-      value: 2ndPart
-      objectReference: {fileID: 0}
     - target: {fileID: 4878306046209390188, guid: 9231a16ba82e1bf4bb067ddb5ad5183b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.051112175
@@ -3778,10 +3792,6 @@ PrefabInstance:
     - target: {fileID: 4878306046209390188, guid: 9231a16ba82e1bf4bb067ddb5ad5183b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253866291586932121, guid: 9231a16ba82e1bf4bb067ddb5ad5183b, type: 3}
-      propertyPath: leveltoload
-      value: Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3835,6 +3845,10 @@ PrefabInstance:
     - target: {fileID: 1002116950432453221, guid: 44e000560936f4940bb9279730826bc4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627270729458182450, guid: 44e000560936f4940bb9279730826bc4, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8958100867727670090, guid: 44e000560936f4940bb9279730826bc4, type: 3}
       propertyPath: m_Name
