@@ -9,8 +9,6 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
     float health = 10;
-    [SerializeField]
-    string leveltoload = "win";
     float maxHP;
     [SerializeField]
     Image healthBar; 
