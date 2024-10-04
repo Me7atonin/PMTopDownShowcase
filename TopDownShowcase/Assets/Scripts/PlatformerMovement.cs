@@ -9,24 +9,40 @@ public class PlatformerMovement : MonoBehaviour
     [SerializeField]
     float jumpSpeed = 5f;
     bool grounded = false;
+    Rigidbody2D rb;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+     rb = GetComponent<Rigidbody2D>();   
+     anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float moveX = Input.GetAxis("Horizontal");
-        Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
+        Vector2 velocity = rb.velocity;
         velocity.x = moveX * moveSpeed;
-        GetComponent<Rigidbody2D>().velocity = velocity; 
+        rb.velocity = velocity; 
         //need to find a way to know if we are on the ground
         if (Input.GetButtonDown("Jump") && grounded)
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100 * jumpSpeed));
+            rb.AddForce(new Vector2(0, 100 * jumpSpeed));
             grounded = false;
+        }
+        anim.SetFloat("y", velocity.y);
+        anim.SetBool("grounded", grounded);
+        int x = (int)Input.GetAxisRaw("Horizontal");
+        anim.SetInteger("x", x);
+        if (x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+
+        }
+        else if (x < 0)
+        { 
+        GetComponent<SpriteRenderer>().flipX = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +51,7 @@ public class PlatformerMovement : MonoBehaviour
         {
             grounded = true;
         }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
