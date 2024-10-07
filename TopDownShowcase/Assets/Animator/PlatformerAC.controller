@@ -99,7 +99,7 @@ AnimatorStateTransition:
     m_ConditionEvent: x
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: grounnded
+    m_ConditionEvent: grounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9012469744889696887}
@@ -156,7 +156,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: grounnded
+  - m_Name: grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -242,7 +242,7 @@ AnimatorStateTransition:
     m_ConditionEvent: y
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: grounnded
+    m_ConditionEvent: grounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7018795721271251954}
@@ -296,7 +296,7 @@ AnimatorStateTransition:
     m_ConditionEvent: y
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: grounnded
+    m_ConditionEvent: grounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -280237360156616236}
@@ -324,7 +324,7 @@ AnimatorStateTransition:
     m_ConditionEvent: x
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: grounnded
+    m_ConditionEvent: grounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5999941079031358127}
